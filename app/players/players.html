@@ -1,1 +1,23 @@
 <h1>Players</h1>
+
+<section class="data-table">
+
+    <div class="table">
+        <div class="table-header-row">
+            <div class="table-header-data left">Last Name</div>
+            <div class="table-header-data left">First Name</div>
+            <div class="table-header-data year">First Year</div>
+            <div class="table-header-data year">Last Year</div>
+            <div class="table-header-data">Hall of Fame</div>
+        </div>
+
+        <div class="table-data-row" *ngFor="let player of players">
+            <div class="table-data left">{{player.lastName}}</div>
+            <div class="table-data left">{{player.firstName}}</div>
+            <div class="table-data center year">{{player.firstYear}}</div>
+            <div class="table-data center year">{{player.lastYear}}</div>
+            <div class="table-data center">{{player.hallOfFame}}</div>
+        </div>
+    </div>
+
+</section>

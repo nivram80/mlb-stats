@@ -1,0 +1,30 @@
+.table {
+  display: table-cell; }
+
+.table-header-data, .table-data {
+  display: table-cell;
+  min-width: 90px;
+  padding: 2px; }
+
+.table-header-data {
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center; }
+
+.table-data {
+  font-size: 13px; }
+
+.year {
+  min-width: 75px; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px; }
+
+.center {
+  text-align: center; }
+
+.left {
+  text-align: left; }
+
+/*# sourceMappingURL=application.css.map */
