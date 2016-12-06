@@ -10,6 +10,7 @@ import { Player } from "./player";
 export class PlayersComponent implements OnInit {
 
     players: Player[];
+    lastNameFilter = { lastName: '' };
 
     constructor(private playerService: PlayerService) { }
 

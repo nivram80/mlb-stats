@@ -1,5 +1,7 @@
 <h1>Players</h1>
 
+<input type="text" placeholder="Enter Last Name" [(ngModel)]="lastNameFilter.lastName">
+
 <section class="data-table">
 
     <div class="table">
@@ -11,7 +13,7 @@
             <div class="table-header-data">Hall of Fame</div>
         </div>
 
-        <div class="table-data-row" *ngFor="let player of players">
+        <div class="table-data-row" *ngFor="let player of players | filterBy: lastNameFilter">
             <div class="table-data left">{{player.lastName}}</div>
             <div class="table-data left">{{player.firstName}}</div>
             <div class="table-data center year">{{player.firstYear}}</div>
