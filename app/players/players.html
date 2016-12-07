@@ -1,6 +1,10 @@
 <h1>Players</h1>
 
-<input type="text" placeholder="Enter Last Name" [(ngModel)]="lastNameFilter.lastName">
+<section class="search-with-dropdown">
+
+    <input type="text" class="search-input" placeholder="Search Last Name" [(ngModel)]="lastNameFilter.lastName">
+
+</section>
 
 <section class="data-table">
 
@@ -18,7 +22,7 @@
             <div class="table-data left">{{player.firstName}}</div>
             <div class="table-data center year">{{player.firstYear}}</div>
             <div class="table-data center year">{{player.lastYear}}</div>
-            <div class="table-data center">{{player.hallOfFame}}</div>
+            <div class="table-data center">{{player.hallOfFame ? 'X' : ''}}</div>
         </div>
     </div>
 

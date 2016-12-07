@@ -2,14 +2,26 @@
   display: table-cell;
 }
 
+.table-header-row {
+  background-color: $secondary-bg-color;
+  color: $secondary-text-color;
+}
+
+.table-data-row {
+  border-bottom: 1px solid $table-row-border-color;
+
+  &:hover {
+    background-color: $table-row-border-color;
+  }
+}
+
 .table-header-data, .table-data {
   display: table-cell;
   min-width: 90px;
-  padding: 2px;
+  padding: 6px 4px;
 }
 
 .table-header-data {
-  font-weight: bold;
   font-size: 14px;
   text-align: center;
 }

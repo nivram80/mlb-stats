@@ -22,4 +22,5 @@ export class PlayersComponent implements OnInit {
         this.playerService.getPlayers()
             .then(players => this.players = players);
     }
+
 }
