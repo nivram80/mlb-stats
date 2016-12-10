@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlayerService } from "./players.service";
-import { Player } from "./player";
+import {Player} from "./player";
 
 @Component({
     selector: 'players',
@@ -9,16 +9,16 @@ import { Player } from "./player";
 
 export class PlayersComponent implements OnInit {
 
-    players: Player[];
-    lastNameFilter = { lastName: '' };
+    public players: Player[];
+    public lastNameFilter = { nameLast: '' };
 
     constructor(private playerService: PlayerService) { }
 
-    ngOnInit(): void {
+    ngOnInit() {
         this.getPlayers();
     }
 
-    getPlayers() {
+    public getPlayers() {
         this.playerService.getPlayers()
             .then(players => this.players = players);
     }

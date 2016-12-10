@@ -2,7 +2,7 @@
 
 <section class="search-with-dropdown">
 
-    <input type="text" class="search-input" placeholder="Search Last Name" [(ngModel)]="lastNameFilter.lastName">
+    <input type="text" class="search-input" placeholder="Search Last Name" [(ngModel)]="lastNameFilter.nameLast">
 
 </section>
 
@@ -12,17 +12,15 @@
         <div class="table-header-row">
             <div class="table-header-data left">Last Name</div>
             <div class="table-header-data left">First Name</div>
-            <div class="table-header-data year">First Year</div>
-            <div class="table-header-data year">Last Year</div>
-            <div class="table-header-data">Hall of Fame</div>
+            <div class="table-header-data year">Debut Year</div>
+            <div class="table-header-data year">Final Year</div>
         </div>
 
         <div class="table-data-row" *ngFor="let player of players | filterBy: lastNameFilter">
-            <div class="table-data left">{{player.lastName}}</div>
-            <div class="table-data left">{{player.firstName}}</div>
-            <div class="table-data center year">{{player.firstYear}}</div>
-            <div class="table-data center year">{{player.lastYear}}</div>
-            <div class="table-data center">{{player.hallOfFame ? 'X' : ''}}</div>
+            <div class="table-data left">{{player.nameLast}}</div>
+            <div class="table-data left">{{player.nameFirst}}</div>
+            <div class="table-data center year">{{player.debut | date: 'y'}}</div>
+            <div class="table-data center year">{{player.finalGame | date: 'y'}}</div>
         </div>
     </div>
 
