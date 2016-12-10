@@ -1,0 +1,29 @@
+button {
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.primary-button {
+  background-color: $primary-action-color;
+  font-size: 16px;
+
+  &:hover {
+    background-color: $primary-action-hover-color;
+  }
+}
+
+.secondary-button {
+  background-color: $secondary-action-color;
+  font-size: 10px;
+  padding: 4px 6px;
+
+  &:hover {
+    background-color: $secondary-action-hover-color;
+  }
+}
