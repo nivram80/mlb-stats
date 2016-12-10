@@ -5,11 +5,20 @@ body {
   font-size: 16px;
   background: url("/app/assets/images/mlb-logo-large-light-gray.jpg") top / cover no-repeat;
   //background: $primary-bg-color;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   color: #001eb0;
   text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+ul {
+  -webkit-padding-start: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 .center {
@@ -18,4 +27,9 @@ a {
 
 .left {
   text-align: left;
+}
+
+.main-content {
+  margin: 60px 10px 10px 10px;
+  height: calc(100% - 80px);
 }
