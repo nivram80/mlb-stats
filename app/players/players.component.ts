@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlayerService } from "./players.service";
-import {Player} from "./player";
+import { Player } from "./player.model";
 
 @Component({
     selector: 'players',

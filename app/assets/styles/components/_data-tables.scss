@@ -1,5 +1,5 @@
 .table {
-  display: table-cell;
+  display: table;
 }
 
 .table-header-row {
@@ -12,6 +12,7 @@
 
   &:hover {
     background-color: $table-row-border-color;
+    cursor: pointer;
   }
 }
 

@@ -16,7 +16,7 @@
             <div class="table-header-data year">Final Year</div>
         </div>
 
-        <div class="table-data-row" *ngFor="let player of players | filterBy: lastNameFilter">
+        <div class="table-data-row" *ngFor="let player of players | filterBy: lastNameFilter" [routerLink]="['/players', player.playerID]">
             <div class="table-data left">{{player.nameLast}}</div>
             <div class="table-data left">{{player.nameFirst}}</div>
             <div class="table-data center year">{{player.debut | date: 'y'}}</div>

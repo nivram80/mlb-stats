@@ -5,6 +5,7 @@ import { PlayerService } from "./players.service";
 import { PlayersComponent } from "./players.component";
 import { FormsModule } from "@angular/forms";
 import { Ng2FilterPipeModule } from "ng2-filter-pipe";
+import { PlayerDetailsComponent } from "./details/player-details.component";
 
 @NgModule({
     imports: [
@@ -14,7 +15,8 @@ import { Ng2FilterPipeModule } from "ng2-filter-pipe";
         Ng2FilterPipeModule
     ],
     declarations: [
-        PlayersComponent
+        PlayersComponent,
+        PlayerDetailsComponent
     ],
     providers: [
         PlayerService
